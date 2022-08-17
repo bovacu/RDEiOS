@@ -22,13 +22,13 @@
 		A333DB33287FAB4C00EE7AEB /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A333DB32287FAB4C00EE7AEB /* CoreTelephony.framework */; };
 		A37955472880D64B009EAB14 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A37955462880D64B009EAB14 /* CoreServices.framework */; };
 		A37985C02881006F009EAB14 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A37985BF2881006F009EAB14 /* Metal.framework */; };
-		A3855A3A28AC795200BC9406 /* libFreetype2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A38559F728AC770C00BC9406 /* libFreetype2.a */; };
-		A3855A3C28AC795200BC9406 /* libglmiOSLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A38559F128AC76F900BC9406 /* libglmiOSLib.a */; };
-		A3855A3E28AC795200BC9406 /* libSDL2_image.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3855A0028AC775300BC9406 /* libSDL2_image.a */; };
-		A3855A3F28AC795200BC9406 /* libSDL2_mixer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3855A0B28AC776300BC9406 /* libSDL2_mixer.a */; };
-		A3855A4628AC798900BC9406 /* libBox2DiOSLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3855A4528AC798500BC9406 /* libBox2DiOSLib.a */; };
-		A3855A9928AC7CEE00BC9406 /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3855A2428AC777500BC9406 /* libSDL2.a */; };
-		A3855AE128AC802C00BC9406 /* libgdeiOSLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3855AD728AC800500BC9406 /* libgdeiOSLib.a */; };
+		A3A72D5828AC8EFD00EEA048 /* libBox2DiOSLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3855A4528AC798500BC9406 /* libBox2DiOSLib.a */; };
+		A3A72D5928AC8EFD00EEA048 /* libFreetype2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A38559F728AC770C00BC9406 /* libFreetype2.a */; };
+		A3A72D5A28AC8EFD00EEA048 /* libgdeiOSLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3855AD728AC800500BC9406 /* libgdeiOSLib.a */; };
+		A3A72D5B28AC8EFD00EEA048 /* libglmiOSLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A38559F128AC76F900BC9406 /* libglmiOSLib.a */; };
+		A3A72D5C28AC8EFD00EEA048 /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3855A2428AC777500BC9406 /* libSDL2.a */; };
+		A3A72D5D28AC8EFD00EEA048 /* libSDL2_image.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3855A0028AC775300BC9406 /* libSDL2_image.a */; };
+		A3A72D5E28AC8EFD00EEA048 /* libSDL2_mixer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3855A0B28AC776300BC9406 /* libSDL2_mixer.a */; };
 		A3EE72AF28822CA80026664A /* Clock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3EE727528822CA80026664A /* Clock.cpp */; };
 		A3EE72B028822CA80026664A /* Color.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3EE727628822CA80026664A /* Color.cpp */; };
 		A3EE72B128822CA80026664A /* Platform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3EE727828822CA80026664A /* Platform.cpp */; };
@@ -360,13 +360,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3855AE128AC802C00BC9406 /* libgdeiOSLib.a in Frameworks */,
-				A3855A9928AC7CEE00BC9406 /* libSDL2.a in Frameworks */,
-				A3855A4628AC798900BC9406 /* libBox2DiOSLib.a in Frameworks */,
-				A3855A3A28AC795200BC9406 /* libFreetype2.a in Frameworks */,
-				A3855A3C28AC795200BC9406 /* libglmiOSLib.a in Frameworks */,
-				A3855A3E28AC795200BC9406 /* libSDL2_image.a in Frameworks */,
-				A3855A3F28AC795200BC9406 /* libSDL2_mixer.a in Frameworks */,
+				A3A72D5828AC8EFD00EEA048 /* libBox2DiOSLib.a in Frameworks */,
+				A3A72D5928AC8EFD00EEA048 /* libFreetype2.a in Frameworks */,
+				A3A72D5A28AC8EFD00EEA048 /* libgdeiOSLib.a in Frameworks */,
+				A3A72D5B28AC8EFD00EEA048 /* libglmiOSLib.a in Frameworks */,
+				A3A72D5C28AC8EFD00EEA048 /* libSDL2.a in Frameworks */,
+				A3A72D5D28AC8EFD00EEA048 /* libSDL2_image.a in Frameworks */,
+				A3A72D5E28AC8EFD00EEA048 /* libSDL2_mixer.a in Frameworks */,
 				FA8B4B97196703B400F8EB7C /* CoreMotion.framework in Frameworks */,
 				A301CEA42881A78F00576725 /* CoreHaptics.framework in Frameworks */,
 				A301CEA12881A65800576725 /* AVFoundation.framework in Frameworks */,
