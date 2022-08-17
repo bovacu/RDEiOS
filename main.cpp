@@ -2,7 +2,7 @@
 
 class MyScene : public GDE::Scene {
     public:
-        explicit MyScene(GDE::Engine* _engine, const std::string& _debugName = "SandboxAndroid") : Scene(_engine, _debugName) {
+        explicit MyScene(GDE::Engine* _engine, const std::string& _debugName = "Editor") : Scene(_engine, _debugName) {
 
         }
 
