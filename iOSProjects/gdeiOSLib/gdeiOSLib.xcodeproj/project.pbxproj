@@ -208,7 +208,6 @@
 		A385596C28AC738100BC9406 /* PhysicsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhysicsManager.h; sourceTree = "<group>"; };
 		A385596E28AC738100BC9406 /* CellularAutomataMapGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellularAutomataMapGenerator.h; sourceTree = "<group>"; };
 		A385596F28AC738100BC9406 /* GDE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDE.h; sourceTree = "<group>"; };
-		A385597028AC738100BC9406 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		A385597428AC738100BC9406 /* Clock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Clock.cpp; sourceTree = "<group>"; };
 		A385597528AC738100BC9406 /* Color.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Color.cpp; sourceTree = "<group>"; };
 		A385597728AC738100BC9406 /* Platform.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Platform.cpp; sourceTree = "<group>"; };
@@ -325,7 +324,6 @@
 			isa = PBXGroup;
 			children = (
 				A385591128AC738100BC9406 /* include */,
-				A385597028AC738100BC9406 /* main.cpp */,
 				A385597128AC738100BC9406 /* src */,
 			);
 			name = engine;
