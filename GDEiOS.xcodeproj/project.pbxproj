@@ -20,9 +20,6 @@
 		A333DB2B287FAB2200EE7AEB /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A333DB2A287FAB2200EE7AEB /* ImageIO.framework */; };
 		A333DB2F287FAB3700EE7AEB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A333DB2E287FAB3700EE7AEB /* SystemConfiguration.framework */; };
 		A333DB33287FAB4C00EE7AEB /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A333DB32287FAB4C00EE7AEB /* CoreTelephony.framework */; };
-		A361047128B1A83E009E87E0 /* Editor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A361046F28B1A83E009E87E0 /* Editor.cpp */; };
-		A361047228B1A83E009E87E0 /* EditorEntry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A361047028B1A83E009E87E0 /* EditorEntry.cpp */; };
-		A361047528B1A92A009E87E0 /* IOSWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A361047428B1A92A009E87E0 /* IOSWindow.cpp */; };
 		A37955472880D64B009EAB14 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A37955462880D64B009EAB14 /* CoreServices.framework */; };
 		A37985C02881006F009EAB14 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A37985BF2881006F009EAB14 /* Metal.framework */; };
 		A3A72D5828AC8EFD00EEA048 /* libBox2DiOSLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3855A4528AC798500BC9406 /* libBox2DiOSLib.a */; };
@@ -225,10 +222,6 @@
 		A333DB2C287FAB2A00EE7AEB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		A333DB2E287FAB3700EE7AEB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A333DB32287FAB4C00EE7AEB /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
-		A361046F28B1A83E009E87E0 /* Editor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Editor.cpp; path = ../GDE/editor/Editor.cpp; sourceTree = "<group>"; };
-		A361047028B1A83E009E87E0 /* EditorEntry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = EditorEntry.cpp; path = ../GDE/editor/EditorEntry.cpp; sourceTree = "<group>"; };
-		A361047328B1A915009E87E0 /* Platform.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Platform.cpp; path = ../GDE/engine/src/core/platform/Platform.cpp; sourceTree = "<group>"; };
-		A361047428B1A92A009E87E0 /* IOSWindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = IOSWindow.cpp; path = ../GDE/engine/src/core/render/window/IOSWindow.cpp; sourceTree = "<group>"; };
 		A37955462880D64B009EAB14 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		A37985BF2881006F009EAB14 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		A38559EC28AC76F900BC9406 /* glmiOSLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = glmiOSLib.xcodeproj; path = iOSProjects/glmiOSLib/glmiOSLib.xcodeproj; sourceTree = "<group>"; };
@@ -408,10 +401,6 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				A361047428B1A92A009E87E0 /* IOSWindow.cpp */,
-				A361047328B1A915009E87E0 /* Platform.cpp */,
-				A361046F28B1A83E009E87E0 /* Editor.cpp */,
-				A361047028B1A83E009E87E0 /* EditorEntry.cpp */,
 				A301CEA52881A83500576725 /* iOS Launch Screen.storyboard */,
 				945C4F52195AF17F00DBBF61 /* Default-568h@2x.png */,
 				29B97315FDCFA39411CA2CEA /* Sources */,
@@ -1256,10 +1245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A361047528B1A92A009E87E0 /* IOSWindow.cpp in Sources */,
 				A3EE72B128822CA80026664A /* Platform.cpp in Sources */,
-				A361047128B1A83E009E87E0 /* Editor.cpp in Sources */,
-				A361047228B1A83E009E87E0 /* EditorEntry.cpp in Sources */,
 				A3EE72BA28822CA80026664A /* Texture.cpp in Sources */,
 				A3EE72C428822CA80026664A /* FontManager.cpp in Sources */,
 				A3EE72CB28822CA80026664A /* WindowInput.cpp in Sources */,
