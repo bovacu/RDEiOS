@@ -20,6 +20,7 @@
 		A333DB2B287FAB2200EE7AEB /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A333DB2A287FAB2200EE7AEB /* ImageIO.framework */; };
 		A333DB2F287FAB3700EE7AEB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A333DB2E287FAB3700EE7AEB /* SystemConfiguration.framework */; };
 		A333DB33287FAB4C00EE7AEB /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A333DB32287FAB4C00EE7AEB /* CoreTelephony.framework */; };
+		A3610A6828B2CEFE009E87E0 /* libFreetype2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A38559F728AC770C00BC9406 /* libFreetype2.a */; };
 		A37955472880D64B009EAB14 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A37955462880D64B009EAB14 /* CoreServices.framework */; };
 		A37985C02881006F009EAB14 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A37985BF2881006F009EAB14 /* Metal.framework */; };
 		FA8B4B97196703B400F8EB7C /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8B4B96196703B400F8EB7C /* CoreMotion.framework */; };
@@ -202,6 +203,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3610A6828B2CEFE009E87E0 /* libFreetype2.a in Frameworks */,
 				FA8B4B97196703B400F8EB7C /* CoreMotion.framework in Frameworks */,
 				A301CEA42881A78F00576725 /* CoreHaptics.framework in Frameworks */,
 				A301CEA12881A65800576725 /* AVFoundation.framework in Frameworks */,
