@@ -231,7 +231,6 @@
 		A3855A0E28AC777500BC9406 /* SDL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL.xcodeproj; path = modules/SDL/Xcode/SDL/SDL.xcodeproj; sourceTree = "<group>"; };
 		A3855A4028AC798500BC9406 /* Box2DiOSLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Box2DiOSLib.xcodeproj; path = iOSProjects/Box2DiOSLib/Box2DiOSLib.xcodeproj; sourceTree = "<group>"; };
 		A3855AD128AC800400BC9406 /* gdeiOSLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = gdeiOSLib.xcodeproj; path = iOSProjects/gdeiOSLib/gdeiOSLib.xcodeproj; sourceTree = "<group>"; };
-		A3AD3E49287E2ED900A9C241 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		A3AD3E4C287E332D00A9C241 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A3AD3E4E287E335200A9C241 /* AVFAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFAudio.framework; path = System/Library/Frameworks/AVFAudio.framework; sourceTree = SDKROOT; };
 		A3AD3E4F287E335200A9C241 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
@@ -423,7 +422,6 @@
 				A38559EC28AC76F900BC9406 /* glmiOSLib.xcodeproj */,
 				A3EE778728822EC90026664A /* assets */,
 				A3EE721228822CA80026664A /* engine */,
-				A3AD3E49287E2ED900A9C241 /* main.cpp */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
