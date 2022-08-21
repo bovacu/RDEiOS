@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A36104F028B296DB009E87E0 /* IOSWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A36104E528B296DB009E87E0 /* IOSWindow.cpp */; };
 		A38559AE28AC738100BC9406 /* Clock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A385597428AC738100BC9406 /* Clock.cpp */; };
 		A38559AF28AC738100BC9406 /* Color.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A385597528AC738100BC9406 /* Color.cpp */; };
 		A38559B028AC738100BC9406 /* Platform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A385597728AC738100BC9406 /* Platform.cpp */; };
@@ -136,6 +137,7 @@
 
 /* Begin PBXFileReference section */
 		A333871B287F9C6600EE7AEB /* libgdeiOSLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libgdeiOSLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A36104E528B296DB009E87E0 /* IOSWindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = IOSWindow.cpp; path = ../../../GDE/engine/src/core/render/window/IOSWindow.cpp; sourceTree = "<group>"; };
 		A3797A952880FCF1009EAB14 /* SDL_mixer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDL_mixer.h; sourceTree = "<group>"; };
 		A38558EF28AC734E00BC9406 /* SDL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL.xcodeproj; path = ../../../modules/SDL/Xcode/SDL/SDL.xcodeproj; sourceTree = "<group>"; };
 		A385591328AC738100BC9406 /* Engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Engine.h; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 		A3338712287F9C6600EE7AEB = {
 			isa = PBXGroup;
 			children = (
+				A36104E528B296DB009E87E0 /* IOSWindow.cpp */,
 				A333871D287F9C6600EE7AEB /* gdeiOSLib */,
 				A333871C287F9C6600EE7AEB /* Products */,
 				A3797A382880FB2C009EAB14 /* Frameworks */,
@@ -942,6 +945,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A36104F028B296DB009E87E0 /* IOSWindow.cpp in Sources */,
 				A38559BE28AC738100BC9406 /* Renderer.cpp in Sources */,
 				A38559D028AC738200BC9406 /* AnimationSystem.cpp in Sources */,
 				A38559B228AC738100BC9406 /* Scene.cpp in Sources */,
