@@ -6,10 +6,6 @@
 	objectVersion = 55;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		A3855AB128AC7F0D00BC9406 /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A385590528AC734E00BC9406 /* libSDL2.a */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
 		A38558FC28AC734E00BC9406 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -106,7 +102,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3855AB128AC7F0D00BC9406 /* libSDL2.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
