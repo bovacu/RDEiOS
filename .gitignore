@@ -1,0 +1,6 @@
+modules/SDL/Xcode/SDL/build
+modules/SDL_image/Xcode-iOS/build
+modules/SDL_mixer/Xcode-iOS/build
+iOSProjects/.DS_Store
+iOSProjects/gdeiOSLib/.DS_Store
+build
