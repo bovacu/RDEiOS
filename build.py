@@ -8,7 +8,7 @@ cli_args = sys.argv
 if len(cli_args) == 2 and cli_args[1] == "help" or cli_args[1] == "-help" or cli_args[1] == "--help" or cli_args[1] == "-h" or cli_args[1] == "--h":
     print("* First argument must be your project's header files directory")
     print("* Second must be your project project's source files directory")
-    print("* Third your project's asset directory and fourth GDE's directory")
+    print("* Third your project's asset")
     print("* Fourth GDE's directory")
     print("* Fifth GDEiOS's directory")
     exit(0)
@@ -18,10 +18,10 @@ if len(cli_args) != 6:
     exit(0)
 
 # Build basic libraries
+os.system('xcodebuild -project modules/Chipmunk2D/xcode/Chipmunk7.xcodeproj -sdk iphoneos -scheme "Chipmunk-iOS" clean archive CONFIGURATION_BUILD_DIR=build -configuration Release')
 os.system('xcodebuild -project modules/SDL/Xcode/SDL/SDL.xcodeproj -sdk iphoneos -scheme "StaticLibrary-iOS" clean archive CONFIGURATION_BUILD_DIR=build -configuration Release')
 os.system('xcodebuild -project modules/SDL_image/Xcode-iOS/SDL_image.xcodeproj -sdk iphoneos -scheme libSDL_image-iOS clean archive CONFIGURATION_BUILD_DIR=build -configuration Release')
 os.system('xcodebuild -project modules/SDL_mixer/Xcode-iOS/SDL_mixer.xcodeproj -sdk iphoneos -scheme libSDL_mixer-iOS clean archive CONFIGURATION_BUILD_DIR=build -configuration Release')
-os.system('xcodebuild -project iOSProjects/Box2DiOSLib/Box2DiOSLib.xcodeproj -sdk iphoneos -scheme Box2DiOSLib clean archive CONFIGURATION_BUILD_DIR=build -configuration Release')
 os.system('xcodebuild -project iOSProjects/freetype2iOSLib/freetype2.xcodeproj -sdk iphoneos clean archive CONFIGURATION_BUILD_DIR=build -configuration Release')
 os.system('xcodebuild -project iOSProjects/glmiOSLib/glmiOSLib.xcodeproj -sdk iphoneos -scheme glmiOSLib clean archive CONFIGURATION_BUILD_DIR=build -configuration Release')
 
@@ -65,12 +65,14 @@ project.add_other_cflags(include)
 project.add_file(cli_args[5] + '/modules/SDL/Xcode/SDL/build/libSDL2.a')
 project.add_file(cli_args[5] + '/modules/SDL_image/Xcode-iOS/build/libSDL2_image.a')
 project.add_file(cli_args[5] + '/modules/SDL_mixer/Xcode-iOS/build/libSDL2_mixer.a')
-project.add_file(cli_args[5] + '/iOSProjects/Box2DiOSLib/build/libBox2DiOSLib.a')
 project.add_file(cli_args[5] + '/iOSProjects/gdeiOSLib/build/libgdeiOSLib.a')
 project.add_file(cli_args[5] + '/iOSProjects/glmiOSLib/build/libglmiOSLib.a')
 project.add_file(cli_args[5] + '/iOSProjects/freetype2iOSLib/build/libFreetype2.a')
 
+print("Added file: " + cli_args[3])
 project.add_file(cli_args[3])
+print("Added file: " + cli_args[4] + '/defaultAssets')
+project.add_file(cli_args[4] + '/defaultAssets')
 
 project.save()
 
