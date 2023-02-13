@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -7279,7 +7279,7 @@
 				LastUpgradeCheck = 1130;
 			};
 			buildConfigurationList = 0073178E0858DB0500B2BC32 /* Build configuration list for PBXProject "SDL" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -9132,7 +9132,7 @@
 					../../src/hidapi/hidapi,
 				);
 				INFOPLIST_FILE = "Info-Framework.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -9217,7 +9217,7 @@
 					../../src/hidapi/hidapi,
 				);
 				INFOPLIST_FILE = "Info-Framework.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -9387,7 +9387,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_LINK_OBJC_RUNTIME = NO;
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 			};
@@ -9433,7 +9433,7 @@
 				00CFA622106A567900758660 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		0073177E0858DB0500B2BC32 /* Build configuration list for PBXNativeTarget "Static Library" */ = {
 			isa = XCConfigurationList;
@@ -9442,7 +9442,7 @@
 				00CFA623106A567900758660 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		007317860858DB0500B2BC32 /* Build configuration list for PBXNativeTarget "Standard DMG" */ = {
 			isa = XCConfigurationList;
@@ -9451,7 +9451,7 @@
 				00CFA625106A567900758660 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		0073178E0858DB0500B2BC32 /* Build configuration list for PBXProject "SDL" */ = {
 			isa = XCConfigurationList;
@@ -9460,7 +9460,7 @@
 				00CFA621106A567900758660 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		A75FCEB023E25AB700529352 /* Build configuration list for PBXNativeTarget "Shared Library-iOS" */ = {
 			isa = XCConfigurationList;
@@ -9469,7 +9469,7 @@
 				A75FCEB223E25AB700529352 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		A75FD06923E25AC700529352 /* Build configuration list for PBXNativeTarget "Shared Library-tvOS" */ = {
 			isa = XCConfigurationList;
@@ -9478,7 +9478,7 @@
 				A75FD06B23E25AC700529352 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		A769B23A23E259AE00872273 /* Build configuration list for PBXNativeTarget "Static Library-tvOS" */ = {
 			isa = XCConfigurationList;
@@ -9487,7 +9487,7 @@
 				A769B23C23E259AE00872273 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		A7D88B5123E2437C00DCD162 /* Build configuration list for PBXNativeTarget "Framework-iOS" */ = {
 			isa = XCConfigurationList;
@@ -9496,7 +9496,7 @@
 				A7D88B5323E2437C00DCD162 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		A7D88D1223E24BED00DCD162 /* Build configuration list for PBXNativeTarget "Framework-tvOS" */ = {
 			isa = XCConfigurationList;
@@ -9505,7 +9505,7 @@
 				A7D88D1423E24BED00DCD162 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		A7D88E5123E24D3B00DCD162 /* Build configuration list for PBXNativeTarget "Static Library-iOS" */ = {
 			isa = XCConfigurationList;
@@ -9514,7 +9514,7 @@
 				A7D88E5323E24D3B00DCD162 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		DB31407417554B71006C0E22 /* Build configuration list for PBXNativeTarget "Shared Library" */ = {
 			isa = XCConfigurationList;
@@ -9523,7 +9523,7 @@
 				DB31407617554B71006C0E22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
