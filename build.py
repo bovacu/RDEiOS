@@ -14,7 +14,7 @@ arg_rde_ios_path = str(Path(__file__).parent)
 arg_opt_output_path = ""
 arg_opt_build_type = "debug"
 arg_opt_log_trace = " > /dev/null"
-arg_opt_force_rebuild = "[]"
+arg_opt_force_rebuild = False
 arg_opt_app_name = "RDEiOS_App"
 arg_opt_app_icon = "defaultAssets/logo.png"
 arg_opt_app_version = "1.0.0.0"
@@ -50,7 +50,7 @@ for arg in sys.argv:
     elif "--output_path" in arg:
         arg_opt_output_path = arg.replace("--output_path=", "")
     elif "--force_rebuild" in arg:
-        arg_opt_force_rebuild = arg.replace("--force_rebuild=", "")
+        arg_opt_force_rebuild = True
     elif "--assets" in arg:
         arg_opt_project_assets = arg.replace("--assets=", "")
     elif "--app_name" in arg:
@@ -60,7 +60,7 @@ for arg in sys.argv:
     elif "--app_version" in arg:
         arg_opt_app_version = arg.replace("--app_version=", "")
     elif "--app_orientations" in arg:
-        arg_opt_app_version = arg.replace("--app_orientations=", "")
+        arg_opt_app_orientations = arg.replace("--app_orientations=", "")
     elif arg == "-h" or arg == "--help" or arg == "help":
         print("The script builds the project for iOS, the following parameters are a must to be provided:")
         print("     --headers=<path/to/your/headers>")
@@ -75,7 +75,7 @@ for arg in sys.argv:
         print("     --output_path=<path/to/export/IPA> If not specified, it will be build/build_type.")
         print("     --assets=<path/to/your/assets> This sets the assets to be included in the build.")
         print("     --trace=<none, error or full> This sets the level of logs during building.")
-        print("     --force_rebuild=[<Chipmunk,SDL2,SDL2_image,SDL2_mixer,RDE,GLM,Freetype2>] by default the libs will be built only once, but if you need to rebuild any, just add the names as a list")
+        print("     --force_rebuild Will rebuild all of the dependencies.")
         print("     --app_name=<name of your app> Sets the name of the app (RDEiOS_App by default)")
         print("     --app_icon=<path/to/icon> Must be relative to the --assets path!")
         print("     --app_version=<1.0.0.0> Must be in the this format, 4 numbers separated by dots.")
@@ -128,37 +128,37 @@ ProjectFiles._FILE_TYPES[u".glsl"] = (u"*.ico", "PBXResourcesBuildPhase")
 ProjectFiles._FILE_TYPES[u".ttf"] = (u"*.ico", "PBXResourcesBuildPhase")
 
 #Build basic libraries
-if not os.path.exists(arg_rde_ios_path + "/modules/Chipmunk2D/xcode/build/" + arg_opt_build_type + "/libChipmunk-iOS.a") or "Chipmunk" in arg_opt_force_rebuild:
+if not os.path.exists(arg_rde_ios_path + "/modules/Chipmunk2D/xcode/build/" + arg_opt_build_type + "/libChipmunk-iOS.a") or arg_opt_force_rebuild:
     result = os.system("xcodebuild -project modules/Chipmunk2D/xcode/Chipmunk7.xcodeproj -sdk iphoneos -scheme 'Chipmunk-iOS' clean archive CONFIGURATION_BUILD_DIR=build/" + arg_opt_build_type + " -configuration " + arg_opt_build_type.capitalize() + " " + arg_opt_log_trace )
     result_log(result, "Chipmunk was buildt correctly")
 else:
     print("Chipmunk already built, skipping")
 
-if not os.path.exists(arg_rde_ios_path + "/modules/SDL/Xcode/SDL/build/" + arg_opt_build_type + "/libSDL2.a") or "SDL2" in arg_opt_force_rebuild:
+if not os.path.exists(arg_rde_ios_path + "/modules/SDL/Xcode/SDL/build/" + arg_opt_build_type + "/libSDL2.a") or arg_opt_force_rebuild:
     result = os.system("xcodebuild -project modules/SDL/Xcode/SDL/SDL.xcodeproj -sdk iphoneos -scheme 'StaticLibrary-iOS' clean archive CONFIGURATION_BUILD_DIR=build/" + arg_opt_build_type + " -configuration " + arg_opt_build_type.capitalize() + " " + arg_opt_log_trace )
     result_log(result, "SDL2 was buildt correctly")
 else:
     print("SDL2 already built, skipping")
 
-if not os.path.exists(arg_rde_ios_path + "/modules/SDL_image/Xcode-iOS/build/" + arg_opt_build_type + "/libSDL2_image.a") or "SDL2_image" in arg_opt_force_rebuild:
+if not os.path.exists(arg_rde_ios_path + "/modules/SDL_image/Xcode-iOS/build/" + arg_opt_build_type + "/libSDL2_image.a") or arg_opt_force_rebuild:
     result = os.system("xcodebuild -project modules/SDL_image/Xcode-iOS/SDL_image.xcodeproj -sdk iphoneos -scheme libSDL_image-iOS clean archive CONFIGURATION_BUILD_DIR=build/" + arg_opt_build_type + " -configuration " + arg_opt_build_type.capitalize() + " " + arg_opt_log_trace )
     result_log(result, "SDL2_image was buildt correctly")
 else:
     print("SDL2_image already built, skipping")
 
-if not os.path.exists(arg_rde_ios_path + "/modules/SDL_mixer/Xcode-iOS/build/" + arg_opt_build_type + "/libSDL2_mixer.a") or "SDL2_mixer" in arg_opt_force_rebuild:
+if not os.path.exists(arg_rde_ios_path + "/modules/SDL_mixer/Xcode-iOS/build/" + arg_opt_build_type + "/libSDL2_mixer.a") or arg_opt_force_rebuild:
     result = os.system("xcodebuild -project modules/SDL_mixer/Xcode-iOS/SDL_mixer.xcodeproj -sdk iphoneos -scheme libSDL_mixer-iOS clean archive CONFIGURATION_BUILD_DIR=build/" + arg_opt_build_type + " -configuration " + arg_opt_build_type.capitalize() + " " + arg_opt_log_trace )
     result_log(result, "SDL2_mixer was buildt correctly")
 else:
     print("SDL2_mixer already built, skipping")
 
-if not os.path.exists(arg_rde_ios_path + "/iOSProjects/freetype2iOSLib/build/" + arg_opt_build_type + "/libFreetype2.a") or "Freetype2" in arg_opt_force_rebuild:
+if not os.path.exists(arg_rde_ios_path + "/iOSProjects/freetype2iOSLib/build/" + arg_opt_build_type + "/libFreetype2.a") or arg_opt_force_rebuild:
     result = os.system("xcodebuild -project iOSProjects/freetype2iOSLib/freetype2.xcodeproj -sdk iphoneos clean archive CONFIGURATION_BUILD_DIR=build/" + arg_opt_build_type + " -configuration " + arg_opt_build_type.capitalize() + " " + arg_opt_log_trace )
     result_log(result, "Freetype2 was buildt correctly")
 else:
     print("Freetype2 already built, skipping")
 
-if not os.path.exists(arg_rde_ios_path + "/iOSProjects/GLMLib/build/" + arg_opt_build_type + "/libGLMLib.a") or "GLM" in arg_opt_force_rebuild:
+if not os.path.exists(arg_rde_ios_path + "/iOSProjects/GLMLib/build/" + arg_opt_build_type + "/libGLMLib.a") or arg_opt_force_rebuild:
     result = os.system("xcodebuild -project iOSProjects/GLMLib/GLMLib.xcodeproj -sdk iphoneos -scheme GLMLib clean archive CONFIGURATION_BUILD_DIR=build/" + arg_opt_build_type + " -configuration " + arg_opt_build_type.capitalize() + " " + arg_opt_log_trace )
     result_log(result, "GLM was buildt correctly")
 else:
@@ -170,7 +170,7 @@ else:
 
 
 # Setup RDE project
-if not os.path.exists(arg_rde_ios_path + "/iOSProjects/RDELib/build/" + arg_opt_build_type + "/libRDELib.a") or "RDE" in arg_opt_force_rebuild:
+if not os.path.exists(arg_rde_ios_path + "/iOSProjects/RDELib/build/" + arg_opt_build_type + "/libRDELib.a") or arg_opt_force_rebuild:
     result = os.system('rm -rf iOSProjects/RDELib/RDELib_.xcodeproj')
     result_log(result, "Made secure copy of RDELib", True)
 
