@@ -152,8 +152,8 @@ if not os.path.exists(arg_rde_ios_path + "/modules/SDL_mixer/Xcode-iOS/build/" +
 else:
     print("SDL2_mixer already built, skipping")
 
-if not os.path.exists(arg_rde_ios_path + "/iOSProjects/freetype2iOSLib/build/" + arg_opt_build_type + "/libFreetype2.a") or arg_opt_force_rebuild:
-    result = os.system("xcodebuild -project iOSProjects/freetype2iOSLib/freetype2.xcodeproj -sdk iphoneos clean archive CONFIGURATION_BUILD_DIR=build/" + arg_opt_build_type + " -configuration " + arg_opt_build_type.capitalize() + " " + arg_opt_log_trace )
+if not os.path.exists(arg_rde_ios_path + "/iOSProjects/freetype/Xcode-iOS/Release-iphoneos/libfreetype.a") or arg_opt_force_rebuild:
+    result = os.system("xcodebuild -project iOSProjects/freetype/Xcode-iOS/freetype.xcodeproj -sdk iphoneos clean archive CONFIGURATION_BUILD_DIR=build/" + arg_opt_build_type + " -configuration " + arg_opt_build_type.capitalize() + " " + arg_opt_log_trace )
     result_log(result, "Freetype2 was buildt correctly")
 else:
     print("Freetype2 already built, skipping")
@@ -192,24 +192,6 @@ if not os.path.exists(arg_rde_ios_path + "/iOSProjects/RDELib/build/" + arg_opt_
     print("Linked dirs: ", include)
     project.remove_other_cflags(include)
     project.add_other_cflags(include)
-
-    project.add_file(arg_rde_ios_path + "/modules/SDL/Xcode/SDL/" + arg_opt_build_type + "/libSDL2.a")
-    print("Included lib: " + arg_rde_ios_path + "/modules/SDL/Xcode/SDL/build/" + arg_opt_build_type + "/libSDL2.a")
-
-    project.add_file(arg_rde_ios_path + "/modules/SDL_image/Xcode-iOS/build/" + arg_opt_build_type + "/libSDL2_image.a")
-    print("Included lib: " + arg_rde_ios_path + "/modules/SDL_image/Xcode-iOS/build/" + arg_opt_build_type + "/libSDL2_image.a")
-
-    project.add_file(arg_rde_ios_path + "/modules/SDL_mixer/Xcode-iOS/build/" + arg_opt_build_type + "/libSDL2_mixer.a")
-    print("Included lib: " + arg_rde_ios_path + "/modules/SDL_mixer/Xcode-iOS/build/" + arg_opt_build_type + "/libSDL2_mixer.a")
-
-    project.add_file(arg_rde_ios_path + "/modules/Chipmunk2D/xcode/build/" + arg_opt_build_type + "/libChipmunk-iOS.a")
-    print("Included lib: " + arg_rde_ios_path + "/modules/Chipmunk2D/xcode/build/" + arg_opt_build_type + "/libChipmunk-iOS.a")
-
-    project.add_file(arg_rde_ios_path + "/iOSProjects/GLMLib/build/" + arg_opt_build_type + "/libGLMLib.a")
-    print("Included lib: " + arg_rde_ios_path + "/iOSProjects/GLMLib/build/" + arg_opt_build_type + "/libGLMLib.a")
-
-    project.add_file(arg_rde_ios_path + "/iOSProjects/freetype2iOSLib/build/" + arg_opt_build_type + "/libFreetype2.a")
-    print("Included lib: " + arg_rde_ios_path + "/iOSProjects/freetype2iOSLib/build/" + arg_opt_build_type + "/libFreetype2.a")
 
     project.save()
 
@@ -254,30 +236,6 @@ project.add_file(arg_opt_alternative_rde_path + '/defaultAssets')
 project.remove_files_by_path("defaultAssets/shaders/core")
 
 print("")
-
-project.add_file(arg_rde_ios_path + "/modules/SDL/Xcode/SDL/" + arg_opt_build_type + "/libSDL2.a")
-print("Included lib: " + arg_rde_ios_path + "/modules/SDL/Xcode/SDL/build/" + arg_opt_build_type + "/libSDL2.a")
-
-project.add_file(arg_rde_ios_path + "/modules/SDL_image/Xcode-iOS/build/" + arg_opt_build_type + "/libSDL2_image.a")
-print("Included lib: " + arg_rde_ios_path + "/modules/SDL_image/Xcode-iOS/build/" + arg_opt_build_type + "/libSDL2_image.a")
-
-project.add_file(arg_rde_ios_path + "/modules/SDL_mixer/Xcode-iOS/build/" + arg_opt_build_type + "/libSDL2_mixer.a")
-print("Included lib: " + arg_rde_ios_path + "/modules/SDL_mixer/Xcode-iOS/build/" + arg_opt_build_type + "/libSDL2_mixer.a")
-
-project.add_file(arg_rde_ios_path + "/modules/Chipmunk2D/xcode/build/" + arg_opt_build_type + "/libChipmunk-iOS.a")
-print("Included lib: " + arg_rde_ios_path + "/modules/Chipmunk2D/xcode/build/" + arg_opt_build_type + "/libChipmunk-iOS.a")
-
-project.add_file(arg_rde_ios_path + "/iOSProjects/GLMLib/build/" + arg_opt_build_type + "/libGLMLib.a")
-print("Included lib: " + arg_rde_ios_path + "/iOSProjects/GLMLib/build/" + arg_opt_build_type + "/libGLMLib.a")
-
-project.add_file(arg_rde_ios_path + "/iOSProjects/freetype2iOSLib/build/" + arg_opt_build_type + "/libFreetype2.a")
-print("Included lib: " + arg_rde_ios_path + "/iOSProjects/freetype2iOSLib/build/" + arg_opt_build_type + "/libFreetype2.a")
-
-project.add_file(arg_rde_ios_path + "/iOSProjects/RDELib/build/" + arg_opt_build_type + "/libRDELib.a")
-print("Included lib: " + arg_rde_ios_path + "/iOSProjects/RDELib/build/" + arg_opt_build_type + "/libRDELib.a")
-
-
-
 
 print("")
 print("------------------- PLIST INFO ----------------------")

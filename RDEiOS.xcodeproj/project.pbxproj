@@ -23,6 +23,8 @@
 		9A6C74A32996C61B000570DE /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FD77A07C0E26BD8C00F39101 /* Icon.png */; };
 		9A6C74A42996C651000570DE /* iOS Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A301CEA52881A83500576725 /* iOS Launch Screen.storyboard */; };
 		9A6C74A52996C651000570DE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 945C4F52195AF17F00DBBF61 /* Default-568h@2x.png */; };
+		9A94D1A9299C654F0045353B /* defaultAssets in Resources */ = {isa = PBXBuildFile; fileRef = 9A94D1A7299C654F0045353B /* defaultAssets */; };
+		9A94D1AA299C654F0045353B /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 9A94D1A8299C654F0045353B /* assets */; };
 		A301CE9928819EDB00576725 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3AD3E56287E34EA00A9C241 /* CoreBluetooth.framework */; };
 		A301CE9A2881A0A900576725 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		A301CEA12881A65800576725 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3AD3E4C287E332D00A9C241 /* AVFoundation.framework */; };
@@ -77,6 +79,8 @@
 		9A6C6E9D2996BE91000570DE /* libSDL2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDL2.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A6C6E9F2996BE91000570DE /* libSDL2_image.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDL2_image.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A6C6EA12996BE91000570DE /* libSDL2_mixer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDL2_mixer.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A94D1A7299C654F0045353B /* defaultAssets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = defaultAssets; path = ../RDE/defaultAssets; sourceTree = "<group>"; };
+		9A94D1A8299C654F0045353B /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = ../RDE/assets; sourceTree = "<group>"; };
 		A301CEA32881A78F00576725 /* CoreHaptics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreHaptics.framework; path = System/Library/Frameworks/CoreHaptics.framework; sourceTree = SDKROOT; };
 		A301CEA52881A83500576725 /* iOS Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "iOS Launch Screen.storyboard"; sourceTree = "<group>"; };
 		A333DB28287FAB1600EE7AEB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -147,6 +151,8 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				9A94D1A8299C654F0045353B /* assets */,
+				9A94D1A7299C654F0045353B /* defaultAssets */,
 				A301CEA52881A83500576725 /* iOS Launch Screen.storyboard */,
 				945C4F52195AF17F00DBBF61 /* Default-568h@2x.png */,
 				29B97315FDCFA39411CA2CEA /* Sources */,
@@ -323,6 +329,8 @@
 				9A6C74A42996C651000570DE /* iOS Launch Screen.storyboard in Resources */,
 				9A6C74A52996C651000570DE /* Default-568h@2x.png in Resources */,
 				9A6C74A22996C61B000570DE /* Default.png in Resources */,
+				9A94D1AA299C654F0045353B /* assets in Resources */,
+				9A94D1A9299C654F0045353B /* defaultAssets in Resources */,
 				9A6C74A32996C61B000570DE /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

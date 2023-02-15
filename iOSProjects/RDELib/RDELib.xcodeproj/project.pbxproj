@@ -68,12 +68,12 @@
 		9A2E41D62996C974000A03F1 /* PhysicsManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E41982996C974000A03F1 /* PhysicsManager.cpp */; };
 		9A2E41D72996C974000A03F1 /* PhysicsBody.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E41992996C974000A03F1 /* PhysicsBody.cpp */; };
 		9A2E41D82996C974000A03F1 /* CellularAutomataMapGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E419B2996C974000A03F1 /* CellularAutomataMapGenerator.cpp */; };
-		9A2E41DA2996CA52000A03F1 /* libChipmunk-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2E40BF2996C967000A03F1 /* libChipmunk-iOS.a */; };
-		9A2E41DB2996CA52000A03F1 /* libFreetype2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2E40762996C92C000A03F1 /* libFreetype2.a */; };
-		9A2E41DC2996CA52000A03F1 /* libGLMLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2E40702996C922000A03F1 /* libGLMLib.a */; };
-		9A2E41DE2996CA52000A03F1 /* libSDL2_image.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2E408A2996C948000A03F1 /* libSDL2_image.a */; };
-		9A2E41DF2996CA52000A03F1 /* libSDL2_mixer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2E407F2996C93A000A03F1 /* libSDL2_mixer.a */; };
-		9A2E42032996CB58000A03F1 /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2E40A12996C957000A03F1 /* libSDL2.a */; };
+		9A94E066299C93850045353B /* libChipmunk-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2E40BF2996C967000A03F1 /* libChipmunk-iOS.a */; };
+		9A94E068299C93850045353B /* libGLMLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2E40702996C922000A03F1 /* libGLMLib.a */; };
+		9A94E06A299C93850045353B /* libSDL2_image.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2E408A2996C948000A03F1 /* libSDL2_image.a */; };
+		9A94E06B299C93850045353B /* libSDL2_mixer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2E407F2996C93A000A03F1 /* libSDL2_mixer.a */; };
+		9A94E09A299C94EC0045353B /* libfreetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A94DFB2299C878F0045353B /* libfreetype.a */; };
+		9A94E09B299C95540045353B /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2E409D2996C957000A03F1 /* SDL2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,13 +83,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 9A6C6C332996AE0F000570DE;
 			remoteInfo = GLMLib;
-		};
-		9A2E40752996C92C000A03F1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9A2E40712996C92C000A03F1 /* freetype2.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6382B1B10FB0FC5100ECAC02;
-			remoteInfo = Freetype2;
 		};
 		9A2E407E2996C93A000A03F1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -252,6 +245,13 @@
 			remoteGlobalIDString = D309B22017EFE2EF00AA52C8;
 			remoteInfo = ObjectiveChipmunkTests;
 		};
+		9A94DFB1299C878F0045353B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A94DFAD299C878F0045353B /* freetype.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C06CB42BFE404E358DD26C38;
+			remoteInfo = freetype;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -269,7 +269,6 @@
 /* Begin PBXFileReference section */
 		9A2E405F2996C90C000A03F1 /* libRDELib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRDELib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A2E406B2996C922000A03F1 /* GLMLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GLMLib.xcodeproj; path = ../GLMLib/GLMLib.xcodeproj; sourceTree = "<group>"; };
-		9A2E40712996C92C000A03F1 /* freetype2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = freetype2.xcodeproj; path = ../freetype2iOSLib/freetype2.xcodeproj; sourceTree = "<group>"; };
 		9A2E40772996C93A000A03F1 /* SDL_mixer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_mixer.xcodeproj; path = "../../modules/SDL_mixer/Xcode-iOS/SDL_mixer.xcodeproj"; sourceTree = "<group>"; };
 		9A2E40822996C947000A03F1 /* SDL_image.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_image.xcodeproj; path = "../../modules/SDL_image/Xcode-iOS/SDL_image.xcodeproj"; sourceTree = "<group>"; };
 		9A2E408D2996C957000A03F1 /* SDL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL.xcodeproj; path = ../../modules/SDL/Xcode/SDL/SDL.xcodeproj; sourceTree = "<group>"; };
@@ -431,6 +430,9 @@
 		9A2E41982996C974000A03F1 /* PhysicsManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PhysicsManager.cpp; sourceTree = "<group>"; };
 		9A2E41992996C974000A03F1 /* PhysicsBody.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PhysicsBody.cpp; sourceTree = "<group>"; };
 		9A2E419B2996C974000A03F1 /* CellularAutomataMapGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CellularAutomataMapGenerator.cpp; sourceTree = "<group>"; };
+		9A94DE38299C76560045353B /* libfreetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreetype.a; path = ../freetype/build/build/UninstalledProducts/iphoneos/libfreetype.a; sourceTree = "<group>"; };
+		9A94DF26299C820E0045353B /* libfreetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreetype.a; path = ../freetype/build/libfreetype.a; sourceTree = "<group>"; };
+		9A94DFAD299C878F0045353B /* freetype.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = freetype.xcodeproj; path = "../freetype/Xcode-iOS/freetype.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -438,12 +440,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A2E42032996CB58000A03F1 /* libSDL2.a in Frameworks */,
-				9A2E41DA2996CA52000A03F1 /* libChipmunk-iOS.a in Frameworks */,
-				9A2E41DB2996CA52000A03F1 /* libFreetype2.a in Frameworks */,
-				9A2E41DC2996CA52000A03F1 /* libGLMLib.a in Frameworks */,
-				9A2E41DE2996CA52000A03F1 /* libSDL2_image.a in Frameworks */,
-				9A2E41DF2996CA52000A03F1 /* libSDL2_mixer.a in Frameworks */,
+				9A94E09B299C95540045353B /* SDL2.framework in Frameworks */,
+				9A94E09A299C94EC0045353B /* libfreetype.a in Frameworks */,
+				9A94E066299C93850045353B /* libChipmunk-iOS.a in Frameworks */,
+				9A94E068299C93850045353B /* libGLMLib.a in Frameworks */,
+				9A94E06A299C93850045353B /* libSDL2_image.a in Frameworks */,
+				9A94E06B299C93850045353B /* libSDL2_mixer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,12 +455,12 @@
 		9A2E40562996C90B000A03F1 = {
 			isa = PBXGroup;
 			children = (
+				9A94DFAD299C878F0045353B /* freetype.xcodeproj */,
 				9A2E40CC2996C973000A03F1 /* engine */,
 				9A2E40AE2996C967000A03F1 /* Chipmunk7.xcodeproj */,
 				9A2E408D2996C957000A03F1 /* SDL.xcodeproj */,
 				9A2E40822996C947000A03F1 /* SDL_image.xcodeproj */,
 				9A2E40772996C93A000A03F1 /* SDL_mixer.xcodeproj */,
-				9A2E40712996C92C000A03F1 /* freetype2.xcodeproj */,
 				9A2E406B2996C922000A03F1 /* GLMLib.xcodeproj */,
 				9A2E40602996C90C000A03F1 /* Products */,
 				9A2E41D92996CA52000A03F1 /* Frameworks */,
@@ -477,14 +479,6 @@
 			isa = PBXGroup;
 			children = (
 				9A2E40702996C922000A03F1 /* libGLMLib.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		9A2E40722996C92C000A03F1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9A2E40762996C92C000A03F1 /* libFreetype2.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1108,8 +1102,18 @@
 		9A2E41D92996CA52000A03F1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9A94DF26299C820E0045353B /* libfreetype.a */,
+				9A94DE38299C76560045353B /* libfreetype.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A94DFAE299C878F0045353B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A94DFB2299C878F0045353B /* libfreetype.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1163,8 +1167,8 @@
 					ProjectRef = 9A2E40AE2996C967000A03F1 /* Chipmunk7.xcodeproj */;
 				},
 				{
-					ProductGroup = 9A2E40722996C92C000A03F1 /* Products */;
-					ProjectRef = 9A2E40712996C92C000A03F1 /* freetype2.xcodeproj */;
+					ProductGroup = 9A94DFAE299C878F0045353B /* Products */;
+					ProjectRef = 9A94DFAD299C878F0045353B /* freetype.xcodeproj */;
 				},
 				{
 					ProductGroup = 9A2E406C2996C922000A03F1 /* Products */;
@@ -1196,13 +1200,6 @@
 			fileType = archive.ar;
 			path = libGLMLib.a;
 			remoteRef = 9A2E406F2996C922000A03F1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9A2E40762996C92C000A03F1 /* libFreetype2.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libFreetype2.a;
-			remoteRef = 9A2E40752996C92C000A03F1 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		9A2E407F2996C93A000A03F1 /* libSDL2_mixer.a */ = {
@@ -1366,6 +1363,13 @@
 			remoteRef = 9A2E40CA2996C967000A03F1 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		9A94DFB2299C878F0045353B /* libfreetype.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libfreetype.a;
+			remoteRef = 9A94DFB1299C878F0045353B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1494,6 +1498,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1546,6 +1551,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1562,7 +1568,7 @@
 					"$(SRCROOT)/../../modules/SDL_mixer/Xcode-iOS/build",
 					"$(SRCROOT)/../../modules/Chipmunk2D/xcode/build",
 					"$(SRCROOT)/../GLMLib/build",
-					"$(SRCROOT)/../freetype2iOSLib/build",
+					"$(SRCROOT)/../freetype/Xcode-iOS/Release-iphoneos/**",
 				);
 				OTHER_CFLAGS = (
 					"-I/Users/macmini/Documents/RDEiOS/modules/SDL/src",
@@ -1573,6 +1579,7 @@
 					"-I/Users/macmini/Documents/RDE/vcpkg/installed/x64-osx/include/SDL2",
 					"-I/Users/macmini/Documents/RDEiOS/modules/SDL/include",
 					"-I/Users/macmini/Documents/RDEiOS/modules/SDL/src",
+					"-I/Users/macmini/Documents/RDEiOS/iOSProjects/freetype/include",
 				);
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
@@ -1580,6 +1587,7 @@
 					"-I/Users/macmini/Documents/RDE/engine/include",
 					"-I/Users/macmini/Documents/RDE/vcpkg/installed/x64-osx/include",
 					"-I/Users/macmini/Documents/RDE/vcpkg/installed/x64-osx/include/SDL2",
+					"-I/Users/macmini/Documents/RDEiOS/iOSProjects/freetype/include",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1599,7 +1607,7 @@
 					"$(SRCROOT)/../../modules/SDL_mixer/Xcode-iOS/build",
 					"$(SRCROOT)/../../modules/Chipmunk2D/xcode/build",
 					"$(SRCROOT)/../GLMLib/build",
-					"$(SRCROOT)/../freetype2iOSLib/build",
+					"$(SRCROOT)/../freetype/Xcode-iOS/Release-iphoneos/**",
 				);
 				OTHER_CFLAGS = (
 					"-I/Users/macmini/Documents/RDEiOS/modules/SDL/src",
@@ -1610,6 +1618,7 @@
 					"-I/Users/macmini/Documents/RDE/vcpkg/installed/x64-osx/include/SDL2",
 					"-I/Users/macmini/Documents/RDEiOS/modules/SDL/include",
 					"-I/Users/macmini/Documents/RDEiOS/modules/SDL/src",
+					"-I/Users/macmini/Documents/RDEiOS/iOSProjects/freetype/include",
 				);
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
@@ -1617,6 +1626,7 @@
 					"-I/Users/macmini/Documents/RDE/engine/include",
 					"-I/Users/macmini/Documents/RDE/vcpkg/installed/x64-osx/include",
 					"-I/Users/macmini/Documents/RDE/vcpkg/installed/x64-osx/include/SDL2",
+					"-I/Users/macmini/Documents/RDEiOS/iOSProjects/freetype/include",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
