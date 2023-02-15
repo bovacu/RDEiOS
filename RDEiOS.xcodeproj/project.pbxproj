@@ -10,21 +10,20 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		28FD15080DC6FC5B0079059D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD15070DC6FC5B0079059D /* QuartzCore.framework */; };
 		9A2E421D2996CF91000A03F1 /* SDL_uikit_main.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E421C2996CF84000A03F1 /* SDL_uikit_main.c */; };
-		9A6C6E582996B97B000570DE /* EditorEntry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A6C6E522996B399000570DE /* EditorEntry.cpp */; };
-		9A6C6E592996B97B000570DE /* Editor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A6C6E532996B399000570DE /* Editor.cpp */; };
-		9A6C6E5A2996BCA8000570DE /* libRDELib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A6C6E4F2996B2C5000570DE /* libRDELib.a */; };
-		9A6C6E982996BE91000570DE /* libChipmunk-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A6C6E972996BE91000570DE /* libChipmunk-iOS.a */; };
-		9A6C6E9A2996BE91000570DE /* libFreetype2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A6C6E992996BE91000570DE /* libFreetype2.a */; };
-		9A6C6E9C2996BE91000570DE /* libGLMLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A6C6E9B2996BE91000570DE /* libGLMLib.a */; };
-		9A6C6E9E2996BE91000570DE /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A6C6E9D2996BE91000570DE /* libSDL2.a */; };
-		9A6C6EA02996BE91000570DE /* libSDL2_image.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A6C6E9F2996BE91000570DE /* libSDL2_image.a */; };
-		9A6C6EA22996BE91000570DE /* libSDL2_mixer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A6C6EA12996BE91000570DE /* libSDL2_mixer.a */; };
 		9A6C74A22996C61B000570DE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FD77A07E0E26BDA900F39101 /* Default.png */; };
 		9A6C74A32996C61B000570DE /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FD77A07C0E26BD8C00F39101 /* Icon.png */; };
 		9A6C74A42996C651000570DE /* iOS Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A301CEA52881A83500576725 /* iOS Launch Screen.storyboard */; };
 		9A6C74A52996C651000570DE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 945C4F52195AF17F00DBBF61 /* Default-568h@2x.png */; };
-		9A94D1A9299C654F0045353B /* defaultAssets in Resources */ = {isa = PBXBuildFile; fileRef = 9A94D1A7299C654F0045353B /* defaultAssets */; };
-		9A94D1AA299C654F0045353B /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 9A94D1A8299C654F0045353B /* assets */; };
+		9A94E075299C94860045353B /* libRDELib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A94D842299C6CE40045353B /* libRDELib.a */; };
+		9A94E0A4299C96540045353B /* EditorEntry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A6C6E522996B399000570DE /* EditorEntry.cpp */; };
+		9A94E0A5299C96540045353B /* Editor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A6C6E532996B399000570DE /* Editor.cpp */; };
+		9A94E0AB299C96C00045353B /* libbz2.1.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A94E0AA299C96BF0045353B /* libbz2.1.0.tbd */; };
+		9A94E0AD299C96CD0045353B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A94E0AC299C96CD0045353B /* libz.tbd */; };
+		9A94E0AF299C96D60045353B /* libcompression.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A94E0AE299C96D60045353B /* libcompression.tbd */; };
+		9A94E0B1299C96E70045353B /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A94E0B0299C96E70045353B /* libc++.1.tbd */; };
+		9A94E0B4299C97220045353B /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 9A94E0B2299C97220045353B /* assets */; };
+		9A94E0B5299C97220045353B /* defaultAssets in Resources */ = {isa = PBXBuildFile; fileRef = 9A94E0B3299C97220045353B /* defaultAssets */; };
+		9A94E0B7299C97450045353B /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A94E0B6299C97450045353B /* libSDL2.a */; };
 		A301CE9928819EDB00576725 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3AD3E56287E34EA00A9C241 /* CoreBluetooth.framework */; };
 		A301CE9A2881A0A900576725 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		A301CEA12881A65800576725 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3AD3E4C287E332D00A9C241 /* AVFoundation.framework */; };
@@ -44,11 +43,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9A6C6E4E2996B2C5000570DE /* PBXContainerItemProxy */ = {
+		9A94D841299C6CE40045353B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9A6C6E442996B2C4000570DE /* RDELib.xcodeproj */;
+			containerPortal = 9A94D837299C6CE30045353B /* RDELib.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 9A6C5D7229969F48000570DE;
+			remoteGlobalIDString = 9A2E405F2996C90C000A03F1;
 			remoteInfo = RDELib;
 		};
 		A3855A4428AC798500BC9406 /* PBXContainerItemProxy */ = {
@@ -69,7 +68,6 @@
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		945C4F52195AF17F00DBBF61 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		9A2E421C2996CF84000A03F1 /* SDL_uikit_main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SDL_uikit_main.c; sourceTree = "<group>"; };
-		9A6C6E442996B2C4000570DE /* RDELib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RDELib.xcodeproj; path = iOSProjects/RDELib/RDELib.xcodeproj; sourceTree = "<group>"; };
 		9A6C6E512996B399000570DE /* Editor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Editor.h; sourceTree = "<group>"; };
 		9A6C6E522996B399000570DE /* EditorEntry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EditorEntry.cpp; sourceTree = "<group>"; };
 		9A6C6E532996B399000570DE /* Editor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Editor.cpp; sourceTree = "<group>"; };
@@ -79,8 +77,20 @@
 		9A6C6E9D2996BE91000570DE /* libSDL2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDL2.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A6C6E9F2996BE91000570DE /* libSDL2_image.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDL2_image.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A6C6EA12996BE91000570DE /* libSDL2_mixer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDL2_mixer.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A94D1A7299C654F0045353B /* defaultAssets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = defaultAssets; path = ../RDE/defaultAssets; sourceTree = "<group>"; };
-		9A94D1A8299C654F0045353B /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = ../RDE/assets; sourceTree = "<group>"; };
+		9A94D837299C6CE30045353B /* RDELib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RDELib.xcodeproj; path = iOSProjects/RDELib/RDELib.xcodeproj; sourceTree = "<group>"; };
+		9A94D882299C74B90045353B /* libfreetype.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libfreetype.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A94DE42299C768A0045353B /* libfreetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreetype.a; path = iOSProjects/freetype/build/build/UninstalledProducts/iphoneos/libfreetype.a; sourceTree = "<group>"; };
+		9A94DE96299C7AAA0045353B /* libfreetype.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libfreetype.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A94DF31299C82470045353B /* libfreetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreetype.a; path = iOSProjects/freetype/build/libfreetype.a; sourceTree = "<group>"; };
+		9A94DFBE299C88260045353B /* libfreetype.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libfreetype.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A94E0A8299C96730045353B /* SDL2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDL2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A94E0AA299C96BF0045353B /* libbz2.1.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.1.0.tbd; path = usr/lib/libbz2.1.0.tbd; sourceTree = SDKROOT; };
+		9A94E0AC299C96CD0045353B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		9A94E0AE299C96D60045353B /* libcompression.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcompression.tbd; path = usr/lib/libcompression.tbd; sourceTree = SDKROOT; };
+		9A94E0B0299C96E70045353B /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
+		9A94E0B2299C97220045353B /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = ../RDE/assets; sourceTree = "<group>"; };
+		9A94E0B3299C97220045353B /* defaultAssets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = defaultAssets; path = ../RDE/defaultAssets; sourceTree = "<group>"; };
+		9A94E0B6299C97450045353B /* libSDL2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDL2.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A301CEA32881A78F00576725 /* CoreHaptics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreHaptics.framework; path = System/Library/Frameworks/CoreHaptics.framework; sourceTree = SDKROOT; };
 		A301CEA52881A83500576725 /* iOS Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "iOS Launch Screen.storyboard"; sourceTree = "<group>"; };
 		A333DB28287FAB1600EE7AEB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -109,13 +119,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A6C6E982996BE91000570DE /* libChipmunk-iOS.a in Frameworks */,
-				9A6C6E9A2996BE91000570DE /* libFreetype2.a in Frameworks */,
-				9A6C6E9C2996BE91000570DE /* libGLMLib.a in Frameworks */,
-				9A6C6E9E2996BE91000570DE /* libSDL2.a in Frameworks */,
-				9A6C6EA02996BE91000570DE /* libSDL2_image.a in Frameworks */,
-				9A6C6EA22996BE91000570DE /* libSDL2_mixer.a in Frameworks */,
-				9A6C6E5A2996BCA8000570DE /* libRDELib.a in Frameworks */,
+				9A94E0B7299C97450045353B /* libSDL2.a in Frameworks */,
+				9A94E0B1299C96E70045353B /* libc++.1.tbd in Frameworks */,
+				9A94E0AF299C96D60045353B /* libcompression.tbd in Frameworks */,
+				9A94E0AD299C96CD0045353B /* libz.tbd in Frameworks */,
+				9A94E0AB299C96C00045353B /* libbz2.1.0.tbd in Frameworks */,
+				9A94E075299C94860045353B /* libRDELib.a in Frameworks */,
 				FA8B4B97196703B400F8EB7C /* CoreMotion.framework in Frameworks */,
 				A301CEA42881A78F00576725 /* CoreHaptics.framework in Frameworks */,
 				A301CEA12881A65800576725 /* AVFoundation.framework in Frameworks */,
@@ -151,8 +160,8 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				9A94D1A8299C654F0045353B /* assets */,
-				9A94D1A7299C654F0045353B /* defaultAssets */,
+				9A94E0B2299C97220045353B /* assets */,
+				9A94E0B3299C97220045353B /* defaultAssets */,
 				A301CEA52881A83500576725 /* iOS Launch Screen.storyboard */,
 				945C4F52195AF17F00DBBF61 /* Default-568h@2x.png */,
 				29B97315FDCFA39411CA2CEA /* Sources */,
@@ -166,9 +175,9 @@
 		29B97315FDCFA39411CA2CEA /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				9A94D837299C6CE30045353B /* RDELib.xcodeproj */,
 				9A2E421C2996CF84000A03F1 /* SDL_uikit_main.c */,
 				9A6C6E502996B399000570DE /* editor */,
-				9A6C6E442996B2C4000570DE /* RDELib.xcodeproj */,
 				A3855A4028AC798500BC9406 /* Box2DiOSLib.xcodeproj */,
 			);
 			name = Sources;
@@ -187,6 +196,17 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9A94E0B6299C97450045353B /* libSDL2.a */,
+				9A94E0B0299C96E70045353B /* libc++.1.tbd */,
+				9A94E0AE299C96D60045353B /* libcompression.tbd */,
+				9A94E0AC299C96CD0045353B /* libz.tbd */,
+				9A94E0AA299C96BF0045353B /* libbz2.1.0.tbd */,
+				9A94E0A8299C96730045353B /* SDL2.framework */,
+				9A94DFBE299C88260045353B /* libfreetype.a */,
+				9A94DE96299C7AAA0045353B /* libfreetype.a */,
+				9A94D882299C74B90045353B /* libfreetype.a */,
+				9A94DE42299C768A0045353B /* libfreetype.a */,
+				9A94DF31299C82470045353B /* libfreetype.a */,
 				9A6C6E972996BE91000570DE /* libChipmunk-iOS.a */,
 				9A6C6E992996BE91000570DE /* libFreetype2.a */,
 				9A6C6E9B2996BE91000570DE /* libGLMLib.a */,
@@ -218,14 +238,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9A6C6E452996B2C4000570DE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9A6C6E4F2996B2C5000570DE /* libRDELib.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		9A6C6E502996B399000570DE /* editor */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +247,14 @@
 			);
 			name = editor;
 			path = ../RDE/editor;
+			sourceTree = "<group>";
+		};
+		9A94D838299C6CE30045353B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A94D842299C6CE40045353B /* libRDELib.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		A3855A4128AC798500BC9406 /* Products */ = {
@@ -293,8 +313,8 @@
 					ProjectRef = A3855A4028AC798500BC9406 /* Box2DiOSLib.xcodeproj */;
 				},
 				{
-					ProductGroup = 9A6C6E452996B2C4000570DE /* Products */;
-					ProjectRef = 9A6C6E442996B2C4000570DE /* RDELib.xcodeproj */;
+					ProductGroup = 9A94D838299C6CE30045353B /* Products */;
+					ProjectRef = 9A94D837299C6CE30045353B /* RDELib.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -305,11 +325,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		9A6C6E4F2996B2C5000570DE /* libRDELib.a */ = {
+		9A94D842299C6CE40045353B /* libRDELib.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libRDELib.a;
-			remoteRef = 9A6C6E4E2996B2C5000570DE /* PBXContainerItemProxy */;
+			remoteRef = 9A94D841299C6CE40045353B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		A3855A4528AC798500BC9406 /* libBox2DiOSLib.a */ = {
@@ -326,12 +346,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A94E0B4299C97220045353B /* assets in Resources */,
 				9A6C74A42996C651000570DE /* iOS Launch Screen.storyboard in Resources */,
 				9A6C74A52996C651000570DE /* Default-568h@2x.png in Resources */,
 				9A6C74A22996C61B000570DE /* Default.png in Resources */,
-				9A94D1AA299C654F0045353B /* assets in Resources */,
-				9A94D1A9299C654F0045353B /* defaultAssets in Resources */,
 				9A6C74A32996C61B000570DE /* Icon.png in Resources */,
+				9A94E0B5299C97220045353B /* defaultAssets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,9 +362,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A94E0A4299C96540045353B /* EditorEntry.cpp in Sources */,
+				9A94E0A5299C96540045353B /* Editor.cpp in Sources */,
 				9A2E421D2996CF91000A03F1 /* SDL_uikit_main.c in Sources */,
-				9A6C6E582996B97B000570DE /* EditorEntry.cpp in Sources */,
-				9A6C6E592996B97B000570DE /* Editor.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,8 +405,8 @@
 					"$(SRCROOT)/modules/SDL_mixer/Xcode-iOS/build",
 					"$(SRCROOT)/modules/Chipmunk2D/xcode/build",
 					"$(SRCROOT)/iOSProjects/GLMLib/build",
-					"$(SRCROOT)/iOSProjects/freetype2iOSLib/build",
 					"$(SRCROOT)/iOSProjects/RDELib/build",
+					"$(SRCROOT)/iOSProjects/freetype/Xcode-iOS/build/**",
 				);
 				MARKETING_VERSION = 1.0.1;
 				ONLY_ACTIVE_ARCH = YES;
@@ -449,8 +469,8 @@
 					"$(SRCROOT)/modules/SDL_mixer/Xcode-iOS/build",
 					"$(SRCROOT)/modules/Chipmunk2D/xcode/build",
 					"$(SRCROOT)/iOSProjects/GLMLib/build",
-					"$(SRCROOT)/iOSProjects/freetype2iOSLib/build",
 					"$(SRCROOT)/iOSProjects/RDELib/build",
+					"$(SRCROOT)/iOSProjects/freetype/Xcode-iOS/build/**",
 				);
 				MARKETING_VERSION = 1.0.1;
 				ONLY_ACTIVE_ARCH = NO;
@@ -519,6 +539,7 @@
 				MARKETING_VERSION = 1.0.1;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -558,7 +579,9 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0.1;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -573,7 +596,7 @@
 				1D6058950D05DD3E006BFB54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "RDEiOS" */ = {
 			isa = XCConfigurationList;
@@ -582,7 +605,7 @@
 				C01FCF5008A954540054247B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
