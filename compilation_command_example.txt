@@ -1,0 +1,1 @@
+python3 build.py --sources=/Users/macmini/Documents/RDE/editor --headers=/Users/macmini/Documents/RDE/editor --assets=/Users/macmini/Documents/RDE/assets --trace=error --install

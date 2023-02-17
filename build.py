@@ -19,6 +19,7 @@ arg_opt_app_name = "RDEiOS_App"
 arg_opt_app_icon = "defaultAssets/logo.png"
 arg_opt_app_version = "1.0.0.0"
 arg_opt_app_orientations = "[portrait]"
+arg_opt_install = False
 
 def trace_to_string(trace):
     if " > /dev/null" in trace:
@@ -61,6 +62,8 @@ for arg in sys.argv:
         arg_opt_app_version = arg.replace("--app_version=", "")
     elif "--app_orientations" in arg:
         arg_opt_app_orientations = arg.replace("--app_orientations=", "")
+    elif "--install" in arg:
+        arg_opt_install = True
     elif arg == "-h" or arg == "--help" or arg == "help":
         print("The script builds the project for iOS, the following parameters are a must to be provided:")
         print("     --headers=<path/to/your/headers>")
@@ -80,6 +83,7 @@ for arg in sys.argv:
         print("     --app_icon=<path/to/icon> Must be relative to the --assets path!")
         print("     --app_version=<1.0.0.0> Must be in the this format, 4 numbers separated by dots.")
         print("     --app_orientations=[<portrait,reverse_port,landscape,reverse_lands>] Any of the 4 versions (or combination) can be added.")
+        print("     --install Installs the build on a connected device.")
 
 if arg_must_project_headers == "":
     print("ERROR: parameter --headers must be provided, pointing to your .h,.hpp files.")
@@ -272,6 +276,9 @@ project.save()
 
 print("Compiling... This may take a while")
 result = os.system("xcodebuild -project RDEiOS_.xcodeproj -sdk iphoneos clean archive CONFIGURATION_BUILD_DIR=" + arg_opt_output_path + " -configuration " + arg_opt_build_type.capitalize() + " -destination generic/platform=iOS" + arg_opt_log_trace)
+result_log(result, "Full project was buildt correctly")
 result = os.system('rm -rf RDEiOS_.xcodeproj' + arg_opt_log_trace )
 result = os.system('rm -rf iOSProjects/RDELib/RDELib_.xcodeproj' + arg_opt_log_trace )
-result_log(result, "Full project was buildt correctly")
+
+if arg_opt_install:
+    os.system("ideviceinstaller -i /private/tmp/RDEiOS_.dst/Applications/RDEiOS.app")

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A1BB305299FA895003E82E0 /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2E40A12996C957000A03F1 /* libSDL2.a */; };
 		9A2E419C2996C974000A03F1 /* Clock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E414B2996C974000A03F1 /* Clock.cpp */; };
 		9A2E419D2996C974000A03F1 /* Color.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E414C2996C974000A03F1 /* Color.cpp */; };
 		9A2E419E2996C974000A03F1 /* Functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E414D2996C974000A03F1 /* Functions.cpp */; };
@@ -73,7 +74,6 @@
 		9A94E06A299C93850045353B /* libSDL2_image.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2E408A2996C948000A03F1 /* libSDL2_image.a */; };
 		9A94E06B299C93850045353B /* libSDL2_mixer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2E407F2996C93A000A03F1 /* libSDL2_mixer.a */; };
 		9A94E09A299C94EC0045353B /* libfreetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A94DFB2299C878F0045353B /* libfreetype.a */; };
-		9A94E09B299C95540045353B /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2E409D2996C957000A03F1 /* SDL2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -440,7 +440,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A94E09B299C95540045353B /* SDL2.framework in Frameworks */,
+				9A1BB305299FA895003E82E0 /* libSDL2.a in Frameworks */,
 				9A94E09A299C94EC0045353B /* libfreetype.a in Frameworks */,
 				9A94E066299C93850045353B /* libChipmunk-iOS.a in Frameworks */,
 				9A94E068299C93850045353B /* libGLMLib.a in Frameworks */,
