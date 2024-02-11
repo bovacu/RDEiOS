@@ -10,8 +10,8 @@
 #undef main
 #endif
 
-int main(int argc, char *argv[]) {
-    return SDL_UIKitRunApp(argc, argv, SDL_main);
+int main(int argc, char* argv[]) {
+    return SDL_RunApp(argc, argv, SDL_main, NULL);
 }
 
 /* vi: set ts=4 sw=4 expandtab: */

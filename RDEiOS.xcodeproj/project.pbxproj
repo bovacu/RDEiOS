@@ -7,37 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
-		28FD15080DC6FC5B0079059D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD15070DC6FC5B0079059D /* QuartzCore.framework */; };
-		9A2E421D2996CF91000A03F1 /* SDL_uikit_main.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E421C2996CF84000A03F1 /* SDL_uikit_main.c */; };
+		9A3CBADC2B770CFD00E1C3DF /* SDL3.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9A3CBADA2B770CFD00E1C3DF /* SDL3.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9A6C74A42996C651000570DE /* iOS Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A301CEA52881A83500576725 /* iOS Launch Screen.storyboard */; };
-		9A6C74A52996C651000570DE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 945C4F52195AF17F00DBBF61 /* Default-568h@2x.png */; };
+		9A71C7AC2B7825AC00131F40 /* SDL3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A3CBADA2B770CFD00E1C3DF /* SDL3.framework */; };
 		9A94E075299C94860045353B /* libRDELib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A94D842299C6CE40045353B /* libRDELib.a */; };
 		9A94E0AB299C96C00045353B /* libbz2.1.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A94E0AA299C96BF0045353B /* libbz2.1.0.tbd */; };
 		9A94E0AD299C96CD0045353B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A94E0AC299C96CD0045353B /* libz.tbd */; };
 		9A94E0AF299C96D60045353B /* libcompression.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A94E0AE299C96D60045353B /* libcompression.tbd */; };
 		9A94E0B1299C96E70045353B /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A94E0B0299C96E70045353B /* libc++.1.tbd */; };
-		9A94E0B7299C97450045353B /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A94E0B6299C97450045353B /* libSDL2.a */; };
-		9A94E0CA299DB1570045353B /* EditorEntry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A6C6E522996B399000570DE /* EditorEntry.cpp */; };
-		9A94E0CB299DB1570045353B /* Editor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A6C6E532996B399000570DE /* Editor.cpp */; };
-		9A94E0D0299DB1690045353B /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 9A94E0CE299DB1680045353B /* assets */; };
-		9A94E0D1299DB1690045353B /* defaultAssets in Resources */ = {isa = PBXBuildFile; fileRef = 9A94E0CF299DB1690045353B /* defaultAssets */; };
-		A301CE9928819EDB00576725 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3AD3E56287E34EA00A9C241 /* CoreBluetooth.framework */; };
-		A301CE9A2881A0A900576725 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
-		A301CEA12881A65800576725 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3AD3E4C287E332D00A9C241 /* AVFoundation.framework */; };
-		A301CEA42881A78F00576725 /* CoreHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A301CEA32881A78F00576725 /* CoreHaptics.framework */; };
-		A301D5AA2881B64A00576725 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD14FF0DC6FC520079059D /* OpenGLES.framework */; };
-		A333DB29287FAB1600EE7AEB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A333DB28287FAB1600EE7AEB /* CoreData.framework */; };
-		A333DB2B287FAB2200EE7AEB /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A333DB2A287FAB2200EE7AEB /* ImageIO.framework */; };
-		A333DB2F287FAB3700EE7AEB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A333DB2E287FAB3700EE7AEB /* SystemConfiguration.framework */; };
-		A333DB33287FAB4C00EE7AEB /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A333DB32287FAB4C00EE7AEB /* CoreTelephony.framework */; };
-		A37955472880D64B009EAB14 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A37955462880D64B009EAB14 /* CoreServices.framework */; };
-		A37985C02881006F009EAB14 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A37985BF2881006F009EAB14 /* Metal.framework */; };
-		FA8B4B97196703B400F8EB7C /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8B4B96196703B400F8EB7C /* CoreMotion.framework */; };
-		FAE0E9651BAF967F0098DFA4 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE0E9641BAF967F0098DFA4 /* GameController.framework */; };
-		FD779EDE0E26BA1200F39101 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD779EDD0E26BA1200F39101 /* CoreAudio.framework */; };
-		FD77A0850E26BDB800F39101 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD77A0840E26BDB800F39101 /* AudioToolbox.framework */; };
-		FDB8BFC60E5A0F6A00980157 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB8BFC50E5A0F6A00980157 /* CoreGraphics.framework */; };
+		9AF524DC2B7823A00077F654 /* hub.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AF524DB2B7823A00077F654 /* hub.c */; };
+		9AF524DD2B7824650077F654 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD77A0840E26BDB800F39101 /* AudioToolbox.framework */; };
+		9AF524DE2B7824650077F654 /* AudioToolbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD77A0840E26BDB800F39101 /* AudioToolbox.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9AF524DF2B7824690077F654 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3AD3E4C287E332D00A9C241 /* AVFoundation.framework */; };
+		9AF524E02B7824690077F654 /* AVFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A3AD3E4C287E332D00A9C241 /* AVFoundation.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9AF524E12B78246C0077F654 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD779EDD0E26BA1200F39101 /* CoreAudio.framework */; };
+		9AF524E22B78246C0077F654 /* CoreAudio.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD779EDD0E26BA1200F39101 /* CoreAudio.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9AF524E32B7824700077F654 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3AD3E56287E34EA00A9C241 /* CoreBluetooth.framework */; };
+		9AF524E42B7824710077F654 /* CoreBluetooth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A3AD3E56287E34EA00A9C241 /* CoreBluetooth.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9AF524E52B7824730077F654 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A333DB28287FAB1600EE7AEB /* CoreData.framework */; };
+		9AF524E62B7824730077F654 /* CoreData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A333DB28287FAB1600EE7AEB /* CoreData.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9AF524E72B78247B0077F654 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		9AF524E82B78247B0077F654 /* UIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9AF524E92B78247E0077F654 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A333DB2E287FAB3700EE7AEB /* SystemConfiguration.framework */; };
+		9AF524EA2B78247E0077F654 /* SystemConfiguration.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A333DB2E287FAB3700EE7AEB /* SystemConfiguration.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9AF524EB2B7824820077F654 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD15070DC6FC5B0079059D /* QuartzCore.framework */; };
+		9AF524EC2B7824820077F654 /* QuartzCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD15070DC6FC5B0079059D /* QuartzCore.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9AF524ED2B7824860077F654 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD14FF0DC6FC520079059D /* OpenGLES.framework */; };
+		9AF524EE2B7824860077F654 /* OpenGLES.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD14FF0DC6FC520079059D /* OpenGLES.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9AF524EF2B78248A0077F654 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A37985BF2881006F009EAB14 /* Metal.framework */; };
+		9AF524F02B78248B0077F654 /* Metal.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A37985BF2881006F009EAB14 /* Metal.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9AF524F12B7824910077F654 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB8BFC50E5A0F6A00980157 /* CoreGraphics.framework */; };
+		9AF524F22B7824910077F654 /* CoreGraphics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FDB8BFC50E5A0F6A00980157 /* CoreGraphics.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9AF524F32B7824960077F654 /* CoreHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A301CEA32881A78F00576725 /* CoreHaptics.framework */; };
+		9AF524F42B7824960077F654 /* CoreHaptics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A301CEA32881A78F00576725 /* CoreHaptics.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9AF524F52B78249B0077F654 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8B4B96196703B400F8EB7C /* CoreMotion.framework */; };
+		9AF524F62B78249B0077F654 /* CoreMotion.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA8B4B96196703B400F8EB7C /* CoreMotion.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9AF524F72B7824A00077F654 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A37955462880D64B009EAB14 /* CoreServices.framework */; };
+		9AF524F82B7824A00077F654 /* CoreServices.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A37955462880D64B009EAB14 /* CoreServices.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9AF524F92B7824A50077F654 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A333DB32287FAB4C00EE7AEB /* CoreTelephony.framework */; };
+		9AF524FA2B7824A50077F654 /* CoreTelephony.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A333DB32287FAB4C00EE7AEB /* CoreTelephony.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9AF524FB2B7824AB0077F654 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		9AF524FC2B7824AB0077F654 /* Foundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9AF524FD2B7824B10077F654 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE0E9641BAF967F0098DFA4 /* GameController.framework */; };
+		9AF524FE2B7824B20077F654 /* GameController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAE0E9641BAF967F0098DFA4 /* GameController.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9AF524FF2B7824B70077F654 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A333DB2A287FAB2200EE7AEB /* ImageIO.framework */; };
+		9AF525002B7824B80077F654 /* ImageIO.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A333DB2A287FAB2200EE7AEB /* ImageIO.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,14 +62,46 @@
 			remoteGlobalIDString = 9A2E405F2996C90C000A03F1;
 			remoteInfo = RDELib;
 		};
-		A3855A4428AC798500BC9406 /* PBXContainerItemProxy */ = {
+		9AF524D72B7823860077F654 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A3855A4028AC798500BC9406 /* Box2DiOSLib.xcodeproj */;
+			containerPortal = 9A94D837299C6CE30045353B /* RDELib.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = A3FCE831287F74EF00426477;
-			remoteInfo = Box2DiOSLib;
+			remoteGlobalIDString = 9A1C49222B77C691008216B3;
+			remoteInfo = RDE;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9A3CBADD2B770CFE00E1C3DF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9AF524F22B7824910077F654 /* CoreGraphics.framework in Embed Frameworks */,
+				9A3CBADC2B770CFD00E1C3DF /* SDL3.framework in Embed Frameworks */,
+				9AF524FC2B7824AB0077F654 /* Foundation.framework in Embed Frameworks */,
+				9AF524F02B78248B0077F654 /* Metal.framework in Embed Frameworks */,
+				9AF524E62B7824730077F654 /* CoreData.framework in Embed Frameworks */,
+				9AF524FA2B7824A50077F654 /* CoreTelephony.framework in Embed Frameworks */,
+				9AF524DE2B7824650077F654 /* AudioToolbox.framework in Embed Frameworks */,
+				9AF524E22B78246C0077F654 /* CoreAudio.framework in Embed Frameworks */,
+				9AF524FE2B7824B20077F654 /* GameController.framework in Embed Frameworks */,
+				9AF524E42B7824710077F654 /* CoreBluetooth.framework in Embed Frameworks */,
+				9AF524EE2B7824860077F654 /* OpenGLES.framework in Embed Frameworks */,
+				9AF524E82B78247B0077F654 /* UIKit.framework in Embed Frameworks */,
+				9AF524EA2B78247E0077F654 /* SystemConfiguration.framework in Embed Frameworks */,
+				9AF524E02B7824690077F654 /* AVFoundation.framework in Embed Frameworks */,
+				9AF524F42B7824960077F654 /* CoreHaptics.framework in Embed Frameworks */,
+				9AF524EC2B7824820077F654 /* QuartzCore.framework in Embed Frameworks */,
+				9AF524F82B7824A00077F654 /* CoreServices.framework in Embed Frameworks */,
+				9AF524F62B78249B0077F654 /* CoreMotion.framework in Embed Frameworks */,
+				9AF525002B7824B80077F654 /* ImageIO.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -65,10 +111,8 @@
 		28FD15070DC6FC5B0079059D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		945C4F52195AF17F00DBBF61 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		9A2E421C2996CF84000A03F1 /* SDL_uikit_main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SDL_uikit_main.c; sourceTree = "<group>"; };
-		9A6C6E512996B399000570DE /* Editor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Editor.h; sourceTree = "<group>"; };
-		9A6C6E522996B399000570DE /* EditorEntry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EditorEntry.cpp; sourceTree = "<group>"; };
-		9A6C6E532996B399000570DE /* Editor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Editor.cpp; sourceTree = "<group>"; };
+		9A3A525C29A311C000A407CF /* libSDL2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDL2.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A3CBADA2B770CFD00E1C3DF /* SDL3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDL3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A6C6E972996BE91000570DE /* libChipmunk-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libChipmunk-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A6C6E992996BE91000570DE /* libFreetype2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFreetype2.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A6C6E9B2996BE91000570DE /* libGLMLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGLMLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,8 +131,8 @@
 		9A94E0AE299C96D60045353B /* libcompression.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcompression.tbd; path = usr/lib/libcompression.tbd; sourceTree = SDKROOT; };
 		9A94E0B0299C96E70045353B /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
 		9A94E0B6299C97450045353B /* libSDL2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDL2.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A94E0CE299DB1680045353B /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = ../RDE/assets; sourceTree = "<group>"; };
-		9A94E0CF299DB1690045353B /* defaultAssets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = defaultAssets; path = ../RDE/defaultAssets; sourceTree = "<group>"; };
+		9AF524DB2B7823A00077F654 /* hub.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = hub.c; path = ../RDE/examples/hub.c; sourceTree = "<group>"; };
+		9AF525012B7825480077F654 /* libSDL3_static.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDL3_static.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A301CEA32881A78F00576725 /* CoreHaptics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreHaptics.framework; path = System/Library/Frameworks/CoreHaptics.framework; sourceTree = SDKROOT; };
 		A301CEA52881A83500576725 /* iOS Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "iOS Launch Screen.storyboard"; sourceTree = "<group>"; };
 		A333DB28287FAB1600EE7AEB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -98,7 +142,6 @@
 		A333DB32287FAB4C00EE7AEB /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		A37955462880D64B009EAB14 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		A37985BF2881006F009EAB14 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
-		A3855A4028AC798500BC9406 /* Box2DiOSLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Box2DiOSLib.xcodeproj; path = iOSProjects/Box2DiOSLib/Box2DiOSLib.xcodeproj; sourceTree = "<group>"; };
 		A3AD3E4C287E332D00A9C241 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A3AD3E4E287E335200A9C241 /* AVFAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFAudio.framework; path = System/Library/Frameworks/AVFAudio.framework; sourceTree = SDKROOT; };
 		A3AD3E4F287E335200A9C241 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
@@ -115,30 +158,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A94E0B7299C97450045353B /* libSDL2.a in Frameworks */,
+				9A71C7AC2B7825AC00131F40 /* SDL3.framework in Frameworks */,
 				9A94E0B1299C96E70045353B /* libc++.1.tbd in Frameworks */,
+				9AF524EB2B7824820077F654 /* QuartzCore.framework in Frameworks */,
 				9A94E0AF299C96D60045353B /* libcompression.tbd in Frameworks */,
 				9A94E0AD299C96CD0045353B /* libz.tbd in Frameworks */,
 				9A94E0AB299C96C00045353B /* libbz2.1.0.tbd in Frameworks */,
 				9A94E075299C94860045353B /* libRDELib.a in Frameworks */,
-				FA8B4B97196703B400F8EB7C /* CoreMotion.framework in Frameworks */,
-				A301CEA42881A78F00576725 /* CoreHaptics.framework in Frameworks */,
-				A301CEA12881A65800576725 /* AVFoundation.framework in Frameworks */,
-				A301D5AA2881B64A00576725 /* OpenGLES.framework in Frameworks */,
-				A301CE9A2881A0A900576725 /* UIKit.framework in Frameworks */,
-				A301CE9928819EDB00576725 /* CoreBluetooth.framework in Frameworks */,
-				A37985C02881006F009EAB14 /* Metal.framework in Frameworks */,
-				A37955472880D64B009EAB14 /* CoreServices.framework in Frameworks */,
-				A333DB33287FAB4C00EE7AEB /* CoreTelephony.framework in Frameworks */,
-				A333DB2F287FAB3700EE7AEB /* SystemConfiguration.framework in Frameworks */,
-				A333DB2B287FAB2200EE7AEB /* ImageIO.framework in Frameworks */,
-				A333DB29287FAB1600EE7AEB /* CoreData.framework in Frameworks */,
-				FAE0E9651BAF967F0098DFA4 /* GameController.framework in Frameworks */,
-				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
-				28FD15080DC6FC5B0079059D /* QuartzCore.framework in Frameworks */,
-				FD779EDE0E26BA1200F39101 /* CoreAudio.framework in Frameworks */,
-				FD77A0850E26BDB800F39101 /* AudioToolbox.framework in Frameworks */,
-				FDB8BFC60E5A0F6A00980157 /* CoreGraphics.framework in Frameworks */,
+				9AF524FB2B7824AB0077F654 /* Foundation.framework in Frameworks */,
+				9AF524F72B7824A00077F654 /* CoreServices.framework in Frameworks */,
+				9AF524F52B78249B0077F654 /* CoreMotion.framework in Frameworks */,
+				9AF524FD2B7824B10077F654 /* GameController.framework in Frameworks */,
+				9AF524F92B7824A50077F654 /* CoreTelephony.framework in Frameworks */,
+				9AF524F32B7824960077F654 /* CoreHaptics.framework in Frameworks */,
+				9AF524E72B78247B0077F654 /* UIKit.framework in Frameworks */,
+				9AF524E12B78246C0077F654 /* CoreAudio.framework in Frameworks */,
+				9AF524E92B78247E0077F654 /* SystemConfiguration.framework in Frameworks */,
+				9AF524E32B7824700077F654 /* CoreBluetooth.framework in Frameworks */,
+				9AF524DF2B7824690077F654 /* AVFoundation.framework in Frameworks */,
+				9AF524DD2B7824650077F654 /* AudioToolbox.framework in Frameworks */,
+				9AF524F12B7824910077F654 /* CoreGraphics.framework in Frameworks */,
+				9AF524EF2B78248A0077F654 /* Metal.framework in Frameworks */,
+				9AF524E52B7824730077F654 /* CoreData.framework in Frameworks */,
+				9AF524FF2B7824B70077F654 /* ImageIO.framework in Frameworks */,
+				9AF524ED2B7824860077F654 /* OpenGLES.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,8 +199,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				9A94E0CE299DB1680045353B /* assets */,
-				9A94E0CF299DB1690045353B /* defaultAssets */,
+				9AF524DB2B7823A00077F654 /* hub.c */,
 				A301CEA52881A83500576725 /* iOS Launch Screen.storyboard */,
 				945C4F52195AF17F00DBBF61 /* Default-568h@2x.png */,
 				29B97315FDCFA39411CA2CEA /* Sources */,
@@ -172,9 +214,6 @@
 			isa = PBXGroup;
 			children = (
 				9A94D837299C6CE30045353B /* RDELib.xcodeproj */,
-				9A2E421C2996CF84000A03F1 /* SDL_uikit_main.c */,
-				9A6C6E502996B399000570DE /* editor */,
-				A3855A4028AC798500BC9406 /* Box2DiOSLib.xcodeproj */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -190,6 +229,9 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9AF525012B7825480077F654 /* libSDL3_static.a */,
+				9A3CBADA2B770CFD00E1C3DF /* SDL3.framework */,
+				9A3A525C29A311C000A407CF /* libSDL2.a */,
 				9A94E0B6299C97450045353B /* libSDL2.a */,
 				9A94E0B0299C96E70045353B /* libc++.1.tbd */,
 				9A94E0AE299C96D60045353B /* libcompression.tbd */,
@@ -232,29 +274,11 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9A6C6E502996B399000570DE /* editor */ = {
-			isa = PBXGroup;
-			children = (
-				9A6C6E512996B399000570DE /* Editor.h */,
-				9A6C6E522996B399000570DE /* EditorEntry.cpp */,
-				9A6C6E532996B399000570DE /* Editor.cpp */,
-			);
-			name = editor;
-			path = ../RDE/editor;
-			sourceTree = "<group>";
-		};
 		9A94D838299C6CE30045353B /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				9A94D842299C6CE40045353B /* libRDELib.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		A3855A4128AC798500BC9406 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A3855A4528AC798500BC9406 /* libBox2DiOSLib.a */,
+				9AF524D82B7823860077F654 /* RDE.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -269,6 +293,7 @@
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				9A3CBADD2B770CFE00E1C3DF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -303,10 +328,6 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = A3855A4128AC798500BC9406 /* Products */;
-					ProjectRef = A3855A4028AC798500BC9406 /* Box2DiOSLib.xcodeproj */;
-				},
-				{
 					ProductGroup = 9A94D838299C6CE30045353B /* Products */;
 					ProjectRef = 9A94D837299C6CE30045353B /* RDELib.xcodeproj */;
 				},
@@ -326,11 +347,11 @@
 			remoteRef = 9A94D841299C6CE40045353B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		A3855A4528AC798500BC9406 /* libBox2DiOSLib.a */ = {
+		9AF524D82B7823860077F654 /* RDE.framework */ = {
 			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libBox2DiOSLib.a;
-			remoteRef = A3855A4428AC798500BC9406 /* PBXContainerItemProxy */;
+			fileType = wrapper.framework;
+			path = RDE.framework;
+			remoteRef = 9AF524D72B7823860077F654 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -340,10 +361,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A94E0D0299DB1690045353B /* assets in Resources */,
 				9A6C74A42996C651000570DE /* iOS Launch Screen.storyboard in Resources */,
-				9A6C74A52996C651000570DE /* Default-568h@2x.png in Resources */,
-				9A94E0D1299DB1690045353B /* defaultAssets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,9 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A94E0CA299DB1570045353B /* EditorEntry.cpp in Sources */,
-				9A94E0CB299DB1570045353B /* Editor.cpp in Sources */,
-				9A2E421D2996CF91000A03F1 /* SDL_uikit_main.c in Sources */,
+				9AF524DC2B7823A00077F654 /* hub.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +392,12 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)/../RDE",
 					"$(inherited)",
+					"$(SRCROOT)/../RDE/external/include/JoltC",
+					"$(SRCROOT)/../RDE/external/include/SDL3",
+					"$(SRCROOT)/../RDE/external/include/imgui",
+					"$(SRCROOT)/../RDE/external/include",
+					"$(SRCROOT)/../RDE/external/",
+					"$(SRCROOT)/../RDE/engine/include",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -385,7 +407,7 @@
 				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = RDE_Editor_Test;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -403,28 +425,22 @@
 				MARKETING_VERSION = 1.0.1;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (
-					"-I/Users/macmini/Documents/RDEiOS/modules/SDL/src",
-					"-I/Users/macmini/Documents/RDEiOS/modules/SDL/include",
-					"-I/Users/macmini/Documents/RDE/editor",
+					"-I/Users/macmini/Documents/SDL/src",
+					"-I/Users/macmini/Documents/SDL/include",
 					"-I/Users/macmini/Documents/RDE/engine/include",
-					"-I/Users/macmini/Documents/RDE/nonVcpkgDeps/Chipmunk2D/include",
-					"-I/Users/macmini/Documents/RDE/vcpkg/installed/x64-osx/include",
-					"-I/Users/macmini/Documents/RDE/vcpkg/installed/x64-osx/include/SDL2",
-					"-I/Users/macmini/Documents/RDEiOS/modules/SDL/include",
-					"-I/Users/macmini/Documents/RDEiOS/modules/SDL/src",
+					"-I/Users/macmini/Documents/RDE/external/include",
+					"-I/Users/macmini/Documents/RDE/external/include/imgui/",
+					"-I/Users/macmini/Documents/RDE/external/include/SDL3/",
+					"-I/Users/macmini/Documents/RDE/external/include/SDL3/include",
+					"-I/Users/macmini/Documents/RDE/external/include/JoltC",
+					"-I/Users/macmini/Documents/RDE/examples",
 				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"$(OTHER_CFLAGS)",
-					"-I/Users/macmini/Documents/RDE/engine/include",
-					"-I/Users/macmini/Documents/RDE/vcpkg/installed/x64-osx/include",
-					"-I/Users/macmini/Documents/RDE/vcpkg/installed/x64-osx/include/SDL2",
-					"-I/Users/macmini/Documents/RDE/nonVcpkgDeps/Chipmunk2D/include",
-					"-I/Users/macmini/Documents/RDEiOS/modules/SDL/src",
-				);
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.RDEiOS;
 				PRODUCT_NAME = RDEiOS;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "-I/Users/macmini/Documents/SDL/Xcode/SDL/SDL.xcodeproj";
 				USE_HEADERMAP = NO;
 			};
 			name = Debug;
@@ -442,6 +458,12 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)/../RDE",
 					"$(inherited)",
+					"$(SRCROOT)/../RDE/external/include/JoltC",
+					"$(SRCROOT)/../RDE/external/include/SDL3",
+					"$(SRCROOT)/../RDE/external/include/imgui",
+					"$(SRCROOT)/../RDE/external/include",
+					"$(SRCROOT)/../RDE/external/",
+					"$(SRCROOT)/../RDE/engine/include",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
@@ -449,7 +471,7 @@
 				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = RDE_Editor_Test;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,30 +487,24 @@
 					"$(SRCROOT)/iOSProjects/freetype/Xcode-iOS/build/**",
 				);
 				MARKETING_VERSION = 1.0.1;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (
-					"-I/Users/macmini/Documents/RDEiOS/modules/SDL/src",
-					"-I/Users/macmini/Documents/RDEiOS/modules/SDL/include",
-					"-I/Users/macmini/Documents/RDE/editor",
+					"-I/Users/macmini/Documents/SDL/src",
+					"-I/Users/macmini/Documents/SDL/include",
 					"-I/Users/macmini/Documents/RDE/engine/include",
-					"-I/Users/macmini/Documents/RDE/nonVcpkgDeps/Chipmunk2D/include",
-					"-I/Users/macmini/Documents/RDE/vcpkg/installed/x64-osx/include",
-					"-I/Users/macmini/Documents/RDE/vcpkg/installed/x64-osx/include/SDL2",
-					"-I/Users/macmini/Documents/RDEiOS/modules/SDL/include",
-					"-I/Users/macmini/Documents/RDEiOS/modules/SDL/src",
+					"-I/Users/macmini/Documents/RDE/external/include",
+					"-I/Users/macmini/Documents/RDE/external/include/imgui/",
+					"-I/Users/macmini/Documents/RDE/external/include/SDL3/",
+					"-I/Users/macmini/Documents/RDE/external/include/SDL3/include",
+					"-I/Users/macmini/Documents/RDE/external/include/JoltC",
+					"-I/Users/macmini/Documents/RDE/examples",
 				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"$(OTHER_CFLAGS)",
-					"-I/Users/macmini/Documents/RDE/engine/include",
-					"-I/Users/macmini/Documents/RDE/vcpkg/installed/x64-osx/include",
-					"-I/Users/macmini/Documents/RDE/vcpkg/installed/x64-osx/include/SDL2",
-					"-I/Users/macmini/Documents/RDE/nonVcpkgDeps/Chipmunk2D/include",
-					"-I/Users/macmini/Documents/RDEiOS/modules/SDL/src",
-				);
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.RDEiOS;
 				PRODUCT_NAME = RDEiOS;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "-I/Users/macmini/Documents/SDL/Xcode/SDL/SDL.xcodeproj";
 				USE_HEADERMAP = NO;
 			};
 			name = Release;
